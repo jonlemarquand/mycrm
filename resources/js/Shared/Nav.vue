@@ -2,24 +2,31 @@
     <nav>
         <div class="logo">Easy<span class="logo--thin">Let</span></div>
         <p>Welcome back, User</p>
+        <ul>
+            <li><NavLink href="/" :active="$page.component === 'Homepage'">Dashboard</NavLink></li>
+        </ul>
         <h2>Customer Information</h2>
         <ul>
-            <li>Properties</li>
-            <li>Landlords</li>
-            <li>Tenants</li>
+            <li><NavLink href="/properties" :active="$page.component === 'Properties'">Properties</NavLink></li>
+            <li><NavLink href="/landlords" :active="$page.component === 'Landlords'">Landlords</NavLink></li>
+            <li><NavLink href="/tenants" :active="$page.component === 'Tenants'">Tenants</NavLink></li>
         </ul>
         <h2>Admin Information</h2>
         <ul>
-            <li>Offices</li>
-            <li>Users</li>
-            <li>Areas</li>
+            <li><NavLink href="/offices" :active="$page.component === 'Offices'">Offices</NavLink></li>
+            <li><NavLink href="/users" :active="$page.component === 'Users'">Users</NavLink></li>
+            <li><NavLink href="/areas" :active="$page.component === 'Areas'">Areas</NavLink></li>
         </ul>
     </nav>
 </template>
 
 <script>
+
+import NavLink from "./NavLink";
+
 export default {
-    name: "Nav"
+    name: "Nav",
+    components: {NavLink}
 }
 </script>
 
@@ -39,6 +46,8 @@ nav {
     font-weight: 900;
     font-size: var(--h1-font-size);
     color: $white;
+    margin-bottom: $space-4;
+
     &--thin {
         font-weight: 300;
     }
@@ -46,6 +55,12 @@ nav {
 
 h2 {
     font-family: $logoFont;
+    margin-bottom: $space-3;
+    margin-top: $space-5;
+}
+
+li {
+    margin: $space-1 0;
 }
 
 </style>

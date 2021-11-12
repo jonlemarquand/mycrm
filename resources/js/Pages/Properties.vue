@@ -1,0 +1,13 @@
+<template>
+    <h1>Properties</h1>
+</template>
+
+<script>
+export default {
+    name: "Properties"
+}
+</script>
+
+<style scoped>
+
+</style>

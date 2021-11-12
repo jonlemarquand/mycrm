@@ -14,3 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::inertia('/', 'Homepage');
+Route::inertia('/properties', 'Properties');
+Route::inertia('/landlords', 'Landlords');
+Route::inertia('/tenants', 'Tenants');
+Route::inertia('/offices', 'Offices');
+Route::inertia('/users', 'Users');
+Route::inertia('/areas', 'Areas');
