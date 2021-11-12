@@ -1,5 +1,6 @@
 <template>
-        <h1>The Homepagee</h1>
+        <h1>Dashboard</h1>
+        <p>Welcome back, User</p>
 </template>
 
 <script>

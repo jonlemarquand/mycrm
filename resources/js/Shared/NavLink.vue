@@ -25,6 +25,10 @@ export default {
     .nav-link {
         color: $white;
 
+        &:hover {
+            color: $highlight;
+        }
+
         &--active {
             font-weight: 700;
             color: $secondary;

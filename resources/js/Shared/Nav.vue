@@ -1,7 +1,6 @@
 <template>
     <nav>
         <div class="logo">Easy<span class="logo--thin">Let</span></div>
-        <p>Welcome back, User</p>
         <ul>
             <li><NavLink href="/" :active="$page.component === 'Homepage'">Dashboard</NavLink></li>
         </ul>

@@ -23,6 +23,13 @@ export default {
 }
 
 main {
-    padding: $space-4;
+    padding: $space-3;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-family: $logoFont;
+    border-bottom: 3px solid $primary;
+    margin-bottom: $space-3;
 }
 </style>
