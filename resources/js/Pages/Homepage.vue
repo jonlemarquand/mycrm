@@ -1,16 +1,14 @@
 <template>
-    <h1>The Homepage</h1>
+        <h1>The Homepagee</h1>
 </template>
 
 <script>
+
 export default {
-    name: "Homepage"
+    name: "Homepage",
 }
 </script>
 
 <style lang="scss" scoped>
-@import '~@/_variables.scss';
- h1 {
-     color: $dull-color;
- }
+
 </style>
