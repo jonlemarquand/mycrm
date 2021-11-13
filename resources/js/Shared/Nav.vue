@@ -16,6 +16,11 @@
             <li><NavLink href="/users" :active="$page.component === 'Users'">Users</NavLink></li>
             <li><NavLink href="/areas" :active="$page.component === 'Areas'">Areas</NavLink></li>
         </ul>
+        <h2>Your Profile</h2>
+        <ul>
+            <li><NavLink href="/profile" :active="$page.component === 'ProfileEdit'">Edit Profile</NavLink></li>
+            <li><NavLink href="/logout" :active="$page.component === 'Users'">Logout</NavLink></li>
+        </ul>
     </nav>
 </template>
 

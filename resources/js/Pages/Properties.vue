@@ -12,7 +12,11 @@
         <tr>
             <td>66 Niton Street, London, SW6 6NJ</td>
             <td>London - Fulham</td>
-            <td>Edit Delete</td>
+            <td>
+                <Link class="link small" href="/property">View</Link>
+                <Link class="link small" href="/property/edit">Edit</Link>
+                <Link href="/property/edit">Delete</Link>
+            </td>
         </tr>
         <tr>
             <td>66 Niton Street, London, SW6 6NJ</td>

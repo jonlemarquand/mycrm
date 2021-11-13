@@ -30,11 +30,19 @@ main {
     align-items: flex-start;
 }
 
-h1 {
-    font-size: var(--h1-font-size);
+h1, h2 {
     font-family: $logoFont;
     border-bottom: 3px solid $primary;
     margin-bottom: $space-3;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    margin-top: $space-3;
+    font-size: var(--h4-font-size);
 }
 
 table {
@@ -47,13 +55,14 @@ table {
         padding: 12px;
     }
 
-    th {
+    th:not(:first-child) {
         padding-left: 12px;
     }
 
     thead > tr > th {
-      padding-bottom: $space-2;
-      font-size: var(--h5-font-size);
+        padding-bottom: $space-2;
+        font-size: var(--h6-font-size);
+        font-family: $logoFont;
     }
 
     tbody {
@@ -69,5 +78,22 @@ table {
             }
         }
     }
+}
+
+button, .link {
+    background: $highlight;
+    color: $white;
+    border: 0;
+    box-shadow: none;
+    font-size:var(--body-large-font-size);
+    font-family: $primaryFont;
+    font-weight: 700;
+    padding: $space-1 $space-2;
+
+    &.small {
+        padding: $space-1 $space-2;
+        font-size: var(--caption-font-size);
+    }
+
 }
 </style>

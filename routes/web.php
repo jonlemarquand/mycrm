@@ -20,3 +20,5 @@ Route::inertia('/tenants', 'Tenants');
 Route::inertia('/offices', 'Offices');
 Route::inertia('/users', 'Users');
 Route::inertia('/areas', 'Areas');
+Route::inertia('/property/edit', 'PropertyEdit');
+Route::inertia('/property', 'PropertyView');
