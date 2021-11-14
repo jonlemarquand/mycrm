@@ -2,15 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
+class Landlord extends Model
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory;
 
     /**
      * The attributes that are mass assignable.
@@ -21,11 +18,13 @@ class User extends Authenticatable
         'first_name',
         'last_name',
         'email',
-        'work_phone',
-        'mobile_phone',
-        'profile_image',
-        'office_id',
-        'password',
+        'building_name',
+        'building_number',
+        'address_line_1',
+        'address_line_2',
+        'city',
+        'county',
+        'postcode',
     ];
 
     /**
@@ -34,8 +33,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
-        'remember_token',
     ];
 
     /**
@@ -44,6 +41,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
     ];
+
+
 }
